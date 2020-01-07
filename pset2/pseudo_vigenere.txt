@@ -1,0 +1,13 @@
+1)Checking whether specifically one command-line argument is provided or not.
+2)if provided then we move on.
+3)IF NOT we exit the program with exit code: 1, printing the error msg.
+
+MOVING ON:
+3)Checking whether the provided command-line argument is STRICTLY ALPHABATIC or NOT!
+4)If yes then move to next step , IF NOT then go to step (3).
+5)Write a function that provides the shifting key according to the entered keyword.
+6)Prompting the user for plaintext.
+7)Creating place holder for output ciphertext
+8)Using the same code as of CAESAR's cipher just adding a if else statment to keep track of iterations over the no. of letters of keyword for iterating key.
+9)If we go out of index of the keyword then start over again with the first letter of the keyword as the KEY.
+10) Verifing the correct behaviour of the program.

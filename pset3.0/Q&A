@@ -1,0 +1,50 @@
+# Questions
+
+## What's `stdint.h`?
+
+'stdint.h' is a header file in C programming language, who's purpose of life is to declare diffrent integer types with specific width &it also declares some very useful macros (think of macros as '#define' statements in C) associated with integer type having specific widths. Here term 'width' associate with the number of bits used to store the integet type in a pure binary system.
+
+
+## What's the point of using `uint8_t`, `uint32_t`, `int32_t`, and `uint16_t` in a program?
+
+TODO
+
+## How many bytes is a `BYTE`, a `DWORD`, a `LONG`, and a `WORD`, respectively?
+
+1 , 4 , 4 , 2.
+
+## What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? Leading bytes used to identify file formats (with high probability) are generally called "magic numbers."
+
+The BMP file start with a bitmapfileheader which's first two bytes are used to store the characters 'B' or 66 the ASCII value associated with character B and 'M' or 77 the ASCII value associated with character M respectively.
+
+## What's the difference between `bfSize` and `biSize`?
+
+'bfSize' is the total size of the bmp file at hand, and 'biSize' is the size of the BITMAPINFOHEADER assiciated with the bmp file at hand.
+
+## What does it mean if `biHeight` is negative?
+
+This means that the given bitmap file is stored as Bottom Up on the actual physical memory. Thus, the start of a bmp file with negative biHeight is actually the last bit stored first and so on bottom up.
+
+## What field in `BITMAPINFOHEADER` specifies the BMP's color depth (i.e., bits per pixel)?
+
+The field 'biBitCount' specifies the bits per pixel.
+
+## Why might `fopen` return `NULL` in `copy.c`?
+
+If the file pointer which calls fopen function don't lead to a valid file address on the memory, the fopen returns NULL.
+
+## Why is the third argument to `fread` always `1` in our code?
+
+Because we are using fread to read a bmp file and our bitmap file is storing each pixel as a structre RGBTRIPLE and we want to read 1 pixel at a time.
+
+## What value does `copy.c` assign to `padding` if `bi.biWidth` is `3`?
+
+0.
+
+## What does `fseek` do?
+
+fseek function sets the position of the file pointer given as argumnet to the specified location which is also given as argument to the fseek function in the file.
+
+## What is `SEEK_CUR`?
+
+It is the current position of the file pointer.

@@ -1,0 +1,30 @@
+1.Check whether the program ran with a command-line argument.
+
+2.if YES:
+    
+    i. check that is it in the requried formate or not i.e., +ve integer.
+    
+    if YES:*------------------------------------------------------------------------->|
+      (follow the arrows till next astrek).                                           | 
+      proceed with the ciphering loop/(more genrally : code).                         |
+                                                                                      |  
+    if NO:                                                                            |
+      Display correct command-line argument format and terminate the program.         |
+                                                                                      |    
+3.if NO:                                                                              |
+    Display correct command-line argument format and terminate the program.           |
+--------------------------------------------------------------------------------------|
+                                                                                      |
+                                                                                      |
+                                                                                      |
+*                                                              <----------------------|
+1.Retrive an integer from the command-line argument string and store it within an 'int' variable.
+
+2.Prompt User for plaintext.
+
+3.Iterate through each character of the plaintext.
+      i.  If it is an uppercase letter, rotate it, preserving case, then print out the rotated character.
+      ii. If it is a lowercase letter, rotate it, preserving case, then print out the rotated character.
+      iii.If it is neither, print out the character as it is.
+
+4.Print a new line 
